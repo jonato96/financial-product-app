@@ -1,0 +1,49 @@
+.container {
+    padding: 5rem 10rem 0 10rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px    
+}
+
+input {
+    border-radius: 5px;
+    height: 30px;
+}
+
+button {
+    background-color: rgba(255, 255, 0, 0.932);
+    color: darkblue;
+    border: none;
+    height: 40px;    
+    width: 80px;
+    border-radius: 5px;
+}
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.table-head {
+    background-color: #F4F6F9;
+    height: 50px;
+}
+
+.table-element {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgb(218, 215, 215);
+}
+
+.table-footer {
+    margin-top: 1rem;    
+}
