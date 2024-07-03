@@ -1,8 +1,9 @@
+<app-banner></app-banner>
 <div class="container">
 
     <div class="header">
         <input type="text" placeholder="Search...">
-        <button>Create</button>
+        <button [routerLink]="'/create-product'">Create</button>
     </div>
     <div class="table-container">
         <table class="table-element">
@@ -67,9 +68,7 @@
                 </tr>
             </tbody>
             <tfoot>
-                <div class="table-footer">
-                    6 Results
-                </div>
+                6 Results           
             </tfoot>
         </table>
     </div>
