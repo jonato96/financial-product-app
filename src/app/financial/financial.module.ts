@@ -4,6 +4,7 @@ import { ListProductComponent } from './pages/list-product/list-product.componen
 import { CreateProductComponent } from './pages/create-product/create-product.component';
 import { FinancialRoutingModule } from './financial-routing.module';
 import { BannerComponent } from './components/banner/banner.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,6 +15,7 @@ import { BannerComponent } from './components/banner/banner.component';
     BannerComponent
   ],
   imports: [
+    RouterModule,
     CommonModule,
     FinancialRoutingModule
   ]

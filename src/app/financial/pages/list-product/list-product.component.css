@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px    
+    margin-bottom: 10px;    
 }
 
 input {
@@ -17,12 +17,12 @@ input {
 }
 
 button {
-    background-color: rgba(255, 255, 0, 0.932);
-    color: darkblue;
+    background-color: #ffdf00;
+    color: #0d245e;
     border: none;
-    height: 40px;    
+    height: 45px;    
     width: 80px;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 button:hover {
@@ -35,7 +35,7 @@ button:hover {
 }
 
 .table-head {
-    background-color: #F4F6F9;
+    background-color: #f4f6f9;
     height: 50px;
 }
 
@@ -47,7 +47,7 @@ button:hover {
 tr {
     height: 50px;
     text-align: center;
-    border-bottom: 1px solid rgb(218, 215, 215);
+    border-bottom: 1px solid #f4f6f9;
 }
 
 tfoot {    
