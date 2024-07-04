@@ -12,27 +12,27 @@
                     <div class="field">
                         <label for="id">ID</label>
                         <input type="text" formControlName="id" id="id">
-                        <span>Error message</span>                
+                        <span *ngIf="isValidField('id')">{{ getFieldError('id') }}</span>                
                     </div>
                     <div class="field">
                         <label for="name">Name</label>
                         <input type="text" formControlName="name" id="name">
-                        <span>Error message</span>                
+                        <span *ngIf="isValidField('name')">{{ getFieldError('name') }}</span>                
                     </div>
                     <div class="field">
                         <label for="description">Description</label>
                         <input type="text" formControlName="description" id="description">
-                        <span>Error message</span>                
+                        <span *ngIf="isValidField('description')">{{ getFieldError('description') }}</span>                
                     </div>
                     <div class="field">
                         <label for="logo">Logo</label>
                         <input type="text" formControlName="logo" id="logo">
-                        <span>Error message</span>                
+                        <span *ngIf="isValidField('logo')">{{ getFieldError('logo') }}</span>                
                     </div>
                     <div class="field">
                         <label for="liberation">Liberation Date</label>
                         <input type="date" formControlName="liberationDate" id="liberation">
-                        <span>Error message</span>                
+                        <span *ngIf="isValidField('liberationDate')">{{ getFieldError('liberation') }}</span>                
                     </div>
                     <div class="field">
                         <label for="revision">Revision Date</label>
@@ -40,10 +40,10 @@
                     </div>
                 </div>
                 <div class="button-field">
-                    <button>
+                    <button (click)="reset()">
                         Reset
                     </button>
-                    <button [disabled]="productForm.invalid">
+                    <button type="submit" [disabled]="productForm.invalid">
                         Send
                     </button>
                 </div>
