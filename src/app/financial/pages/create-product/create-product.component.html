@@ -1,2 +1,51 @@
 <app-banner></app-banner>
-<p>create-product works!</p>
+<div class="center">
+    <div class="container">
+        <div class="title">
+            Register Form
+        </div>
+        <hr>
+        <div class="form-container">
+            <form formGroup="productForm" ngSubmit="save">
+    
+                <div class="form-body">
+                    <div class="field">
+                        <label for="id">ID</label>
+                        <input type="text" formControlName="id" id="id">                
+                    </div>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" formControlName="name" id="name">                
+                    </div>
+                    <div class="field">
+                        <label for="description">Description</label>
+                        <input type="text" formControlName="description" id="description">                
+                    </div>
+                    <div class="field">
+                        <label for="logo">Logo</label>
+                        <input type="text" formControlName="logo" id="logo">                
+                    </div>
+                    <div class="field">
+                        <label for="liberation">Liberation Date</label>
+                        <input type="date" formControlName="liberationDate" id="liberation">                
+                    </div>
+                    <div class="field">
+                        <label for="revision">Revision Date</label>
+                        <input type="date" formControlName="revisionDate" id="revision">                
+                    </div>
+                </div>
+                <div class="button-field">
+                    <button>
+                        Reset
+                    </button>
+                    <button>
+                        Send
+                    </button>
+                </div>
+    
+    
+            </form>
+        </div>   
+    
+    </div>
+</div>
