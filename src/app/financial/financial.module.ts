@@ -5,6 +5,7 @@ import { CreateProductComponent } from './pages/create-product/create-product.co
 import { FinancialRoutingModule } from './financial-routing.module';
 import { BannerComponent } from './components/banner/banner.component';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule,
     CommonModule,
-    FinancialRoutingModule
+    FinancialRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class FinancialModule { }

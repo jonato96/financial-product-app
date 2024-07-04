@@ -6,39 +6,44 @@
         </div>
         <hr>
         <div class="form-container">
-            <form formGroup="productForm" ngSubmit="save">
+            <form [formGroup]="productForm" ngSubmit="save">
     
                 <div class="form-body">
                     <div class="field">
                         <label for="id">ID</label>
-                        <input type="text" formControlName="id" id="id">                
+                        <input type="text" formControlName="id" id="id">
+                        <span>Error message</span>                
                     </div>
                     <div class="field">
                         <label for="name">Name</label>
-                        <input type="text" formControlName="name" id="name">                
+                        <input type="text" formControlName="name" id="name">
+                        <span>Error message</span>                
                     </div>
                     <div class="field">
                         <label for="description">Description</label>
-                        <input type="text" formControlName="description" id="description">                
+                        <input type="text" formControlName="description" id="description">
+                        <span>Error message</span>                
                     </div>
                     <div class="field">
                         <label for="logo">Logo</label>
-                        <input type="text" formControlName="logo" id="logo">                
+                        <input type="text" formControlName="logo" id="logo">
+                        <span>Error message</span>                
                     </div>
                     <div class="field">
                         <label for="liberation">Liberation Date</label>
-                        <input type="date" formControlName="liberationDate" id="liberation">                
+                        <input type="date" formControlName="liberationDate" id="liberation">
+                        <span>Error message</span>                
                     </div>
                     <div class="field">
                         <label for="revision">Revision Date</label>
-                        <input type="date" formControlName="revisionDate" id="revision">                
+                        <input type="date" formControlName="revisionDate" id="revision" readonly>                
                     </div>
                 </div>
                 <div class="button-field">
                     <button>
                         Reset
                     </button>
-                    <button>
+                    <button [disabled]="productForm.invalid">
                         Send
                     </button>
                 </div>
@@ -49,3 +54,15 @@
     
     </div>
 </div>
+
+<code>
+    Value: {{ productForm.value | json }}
+</code>
+<br>
+<code>
+    Valid: {{ productForm.valid }}
+</code>
+<br>
+<code>
+    Errors: {{ productForm.controls['id'].errors | json}}
+</code>
