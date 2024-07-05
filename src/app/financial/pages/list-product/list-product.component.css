@@ -55,3 +55,11 @@ tfoot {
     justify-content: space-between;
     margin-top: 1rem;       
 }
+
+a {
+    font-size: 20px;
+}
+
+a:hover {
+    cursor: pointer;
+}
