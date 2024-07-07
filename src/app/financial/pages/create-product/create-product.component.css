@@ -54,7 +54,11 @@ button {
     height: 45px;    
     width: 80px;
     border-radius: 5px;
-}    
+}
+
+button:hover {
+    cursor: pointer;
+}
 
 span {
     font-size: 10px;
