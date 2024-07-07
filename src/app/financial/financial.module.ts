@@ -4,7 +4,6 @@ import { ListProductComponent } from './pages/list-product/list-product.componen
 import { CreateProductComponent } from './pages/create-product/create-product.component';
 import { FinancialRoutingModule } from './financial-routing.module';
 import { BannerComponent } from './components/banner/banner.component';
-import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -15,8 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CreateProductComponent,
     BannerComponent
   ],
-  imports: [
-    RouterModule,
+  imports: [    
     CommonModule,
     FinancialRoutingModule,
     ReactiveFormsModule
